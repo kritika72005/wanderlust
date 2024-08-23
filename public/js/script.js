@@ -22,27 +22,3 @@ const { model } = require("mongoose");
     );
   });
 })();
-
-// dark mode
-
-// document.addEventListener("DOMContentLoaded", (event) => {
-//   const toggleButton = document.getElementById("dark-mode-toggle");
-
-//   // Check if dark mode is already enabled
-//   if (localStorage.getItem("dark-mode") === "enabled") {
-//     document.body.classList.add("dark-mode");
-//     document.querySelector(".navbar").classList.add("dark-mode");
-//   }
-
-//   toggleButton.addEventListener("click", () => {
-//     document.body.classList.toggle("dark-mode");
-//     document.querySelector(".navbar").classList.toggle("dark-mode");
-
-//     // Save dark mode preference
-//     if (document.body.classList.contains("dark-mode")) {
-//       localStorage.setItem("dark-mode", "enabled");
-//     } else {
-//       localStorage.removeItem("dark-mode");
-//     }
-//   });
-// });
