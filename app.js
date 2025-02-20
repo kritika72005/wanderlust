@@ -29,7 +29,7 @@ main()
     console.log("connected to DB");
   })
   .catch((err) => {
-    console.log(err);
+    console.log("Error connecting to DB:", err);
   });
 
 async function main() {
@@ -56,7 +56,7 @@ store.on("error", () => {
 });
 
 const sessionOptions = {
-  // store,
+  store,
   secret: process.env.SECRET,
 
   resave: false,
